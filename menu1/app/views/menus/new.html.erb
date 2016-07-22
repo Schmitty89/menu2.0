@@ -1,0 +1,16 @@
+<h1>creates new menus</h1>
+<%= form_for :menus, url: menus_path do |f| %>
+  <p>
+    <%= f.label :New_menu %><br>
+    <%= f.text_field :New_menu %>
+  </p>
+
+  <p>
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
