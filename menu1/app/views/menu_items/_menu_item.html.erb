@@ -1,16 +1,10 @@
 <p>
   <strong>Item:</strong>
-  <%= menu_item.item %>
-</p>
-<p>
+  <%= menu_item.item %><br>
   <strong>Description:</strong>
-  <%= menu_item.desription %>
-</p>
-<p>
+  <%= menu_item.desription %><br>
   <strong>Price:</strong>
-  <%= menu_item.price %>
-</p>
-<p>
+  <%= menu_item.price %><br>
   <%= link_to 'Destroy Dish', [menu_item.menu, menu_item],
                method: :delete,
                data: { confirm: 'Are you sure?' } %>

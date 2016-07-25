@@ -2,18 +2,21 @@
   to see all your menus <%= link_to 'click here', menus_path() %>
 </p>
 <p>
-  <strong>New menu</strong><br>
+  <strong>New menu</strong>
   <%= @menu.new_menu %>
 </p>
 <p>
   <strong>Description</strong>
-  <br>
   <%= @menu.description %>
 </p>
 <p>
-  <strong>this menus dishes</strong>
+  <strong>These are the dishes on the menu</strong>
   <%= render @menu.menu_items %>
 </p>
  <strong>Please add your menus selections here</strong>
+
+ <table>
+
+ </table>
 
 <%= render 'menu_items/form' %>

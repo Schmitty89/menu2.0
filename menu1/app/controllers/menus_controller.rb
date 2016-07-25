@@ -26,9 +26,9 @@ class MenusController < ApplicationController
   end
 
   def update
-    @Menu = Menu.find params[:id]
+    @menu = Menu.find params[:id]
 
-    if @menu.update menus_params
+    if @menu.update(menus_params)
       redirect_to @menu
     else
       render :edit
