@@ -1,0 +1,21 @@
+<h1>Your new menu here</h1>
+<h3>make a new menu <%= link_to 'click here', new_menu_path() %>   </h3>
+<h3>to go home  <%= link_to 'click here', root_path() %>  </h3>
+<table>
+  <tr>
+    <th>Menu Title</th>
+    <th>description</th>
+    <th>links</th>
+  </tr>
+
+  <% @menus.each do |menu| %>
+  <tr>
+    <td><%= menu.new_menu %></td>
+    <td><%= menu.description %></td>
+    <td><%= link_to 'show', menu_path(menu)%></td>
+    <td><%= link_to 'change me', edit_menu_path(menu)%></td>
+    <td><%= link_to 'Obliterate', menu_path(menu), method: :delete,
+              data: { confirm: 'Really?' } %></td>
+  </tr>
+  <% end %>
+</table>

@@ -1,0 +1,17 @@
+<p>
+  <strong>Item:</strong>
+  <%= menu_item.item %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= menu_item.desription %>
+</p>
+<p>
+  <strong>Price:</strong>
+  <%= menu_item.price %>
+</p>
+<p>
+  <%= link_to 'Destroy Dish', [menu_item.menu, menu_item],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>
